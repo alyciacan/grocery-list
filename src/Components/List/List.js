@@ -5,9 +5,10 @@ const List = (props) => {
     const groceryList = props.list.map(item => {
         return (
             <Item  
-                id={item.id}
-                amount={item.amount}
-                name={item.name}
+                id={ item.id }
+                amount={ item.amount }
+                name={ item.name }
+                deleteItem={ props.deleteItem }
             />
         )
     }
@@ -15,7 +16,7 @@ const List = (props) => {
     
     return (
     <div className="list">
-
+        { groceryList }
     </div>
     )
 }

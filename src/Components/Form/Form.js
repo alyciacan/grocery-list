@@ -18,7 +18,7 @@ class Form extends Component {
     submitItem = (e) => {
         e.preventDefault();
         const newItem = {
-            id: Date.now(),
+            // id: Date.now(),
             ...this.state
         }
         this.props.addToList(newItem);
